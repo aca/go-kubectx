@@ -15,7 +15,7 @@ git clone git@github.com:aca/go-kubectx.git
 (cd go-kubectx/cmd/kubectx && go install)
 
 # Using Docker - also cross-compiles for other OS's
-cd go-kubectl && ./build.sh
+cd go-kubectx && ./build.sh
 
 files will be output into the output directory after build.
 ```
