@@ -4,10 +4,16 @@ Simply 5x-10x faster alternative to famous [kubectx](https://github.com/ahmetb/k
 
 ### Install
 ```
-# Using go mod, requires Go>=1.13
 git clone git@github.com:aca/go-kubectx.git
+
+# Using go mod, requires Go>=1.13
 (cd go-kubectx/cmd/kubens && go install)
 (cd go-kubectx/cmd/kubectx && go install)
+
+# Using Docker - also cross-compiles for other OS's
+cd go-kubectl && ./build.sh
+
+files will be output into the output directory after build.
 ```
 
 ### Benchmarks
