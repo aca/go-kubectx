@@ -3,12 +3,9 @@ module github.com/aca/kubectx
 go 1.13
 
 require (
-	github.com/davecgh/go-spew v1.1.1
 	github.com/gogo/protobuf v1.3.1 // indirect
 	github.com/googleapis/gnostic v0.3.1 // indirect
 	github.com/imdario/mergo v0.3.8 // indirect
-	github.com/k0kubun/pp v3.0.1+incompatible
-	github.com/mattn/go-colorable v0.1.4 // indirect
 	github.com/spf13/pflag v1.0.5
 	golang.org/x/crypto v0.0.0-20191128160524-b544559bb6d1 // indirect
 	golang.org/x/net v0.0.0-20191126235420-ef20fe5d7933 // indirect
