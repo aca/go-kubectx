@@ -8,8 +8,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/aca/kubectx/config"
-	"github.com/aca/kubectx/fzfutil"
+	"github.com/aca/go-kubectx/config"
+	"github.com/aca/go-kubectx/fzfutil"
 	"github.com/spf13/pflag"
 
 	clientcmdapi "k8s.io/client-go/tools/clientcmd/api"

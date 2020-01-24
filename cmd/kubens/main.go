@@ -9,8 +9,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/aca/kubectx/config"
-	"github.com/aca/kubectx/fzfutil"
+	"github.com/aca/go-kubectx/config"
+	"github.com/aca/go-kubectx/fzfutil"
 	"github.com/spf13/pflag"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
