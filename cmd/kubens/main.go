@@ -33,7 +33,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fs := pflag.NewFlagSet("kubectx", pflag.ContinueOnError)
+	fs := pflag.NewFlagSet("kubens", pflag.ContinueOnError)
 	current := fs.BoolP("current", "c", false, "show the current context")
 	help := fs.BoolP("help", "h", false, "help")
 	fs.Parse(os.Args[1:])
