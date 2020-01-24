@@ -1,13 +1,22 @@
 # kubectx
 
-Faster/Smarter alternative to famous [kubectx](https://github.com/ahmetb/kubectx). <br>
-Uses client-go.
+Simply 5x-10x faster alternative to famous [kubectx](https://github.com/ahmetb/kubectx). Uses client-go.
 
 ### Install
 ```
-# kubens
 go get -u github.com/aca/kubectx/cmd/kubens
-
-# kubectx
-TODO
+go get -u github.com/aca/kubectx/cmd/kubectx
 ```
+
+### Benchmarks
+
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `/usr/bin/kubectx minikube` | 98.9 ± 12.1 | 84.8 | 138.6 | 5.35 ± 0.89 |
+| `/home/rok/bin/kubectx minikube` | 18.5 ± 2.1 | 15.6 | 27.1 | 1.00 |
+
+
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `/usr/bin/kubens kube-system` | 258.6 ± 20.7 | 237.9 | 300.9 | 5.73 ± 1.78 |
+| `/home/rok/bin/kubens kube-system` | 45.1 ± 13.6 | 32.3 | 120.0 | 1.00 |
