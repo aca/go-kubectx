@@ -39,7 +39,7 @@ func getCfgPath() (string, error) {
 		if err != nil {
 			return "", err
 		}
-		err = ioutil.WriteFile(cfgPath, buf.Bytes(), 0777)
+		err = ioutil.WriteFile(cfgPath, buf.Bytes(), 0666)
 		if err != nil {
 			return "", err
 		}
