@@ -2,9 +2,12 @@
 
 Simply 5x-10x faster alternative to famous [kubectx](https://github.com/ahmetb/kubectx). Uses client-go.
 
+### Dependencies
+Requires [fzf](https://github.com/junegunn/fzf) same as original kubectx.
+
 ### Install
+Using go mod, requires go>=1.13
 ```
-# Using go mod, requires Go>=1.13
 git clone git@github.com:aca/go-kubectx.git
 (cd go-kubectx/cmd/kubens && go install)
 (cd go-kubectx/cmd/kubectx && go install)
