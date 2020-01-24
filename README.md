@@ -4,8 +4,10 @@ Simply 5x-10x faster alternative to famous [kubectx](https://github.com/ahmetb/k
 
 ### Install
 ```
-go get -u github.com/aca/go-kubectx/cmd/kubens
-go get -u github.com/aca/go-kubectx/cmd/kubectx
+# Using go mod, requires Go>=1.13
+git clone git@github.com:aca/go-kubectx.git
+(cd go-kubectx/cmd/kubens && go install)
+(cd go-kubectx/cmd/kubectx && go install)
 ```
 
 ### Benchmarks
