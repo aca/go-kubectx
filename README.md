@@ -1,11 +1,11 @@
-# kubectx
+# go-kubectx
 
 Simply 5x-10x faster alternative to famous [kubectx](https://github.com/ahmetb/kubectx). Uses client-go.
 
 ### Install
 ```
-go get -u github.com/aca/kubectx/cmd/kubens
-go get -u github.com/aca/kubectx/cmd/kubectx
+go get -u github.com/aca/go-kubectx/cmd/kubens
+go get -u github.com/aca/go-kubectx/cmd/kubectx
 ```
 
 ### Benchmarks
