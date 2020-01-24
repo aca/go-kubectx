@@ -98,6 +98,12 @@ func kubens(query string) (err error) {
 		return err
 	}
 
+	for _, item := range namespaces.Items{
+		if item.ObjectMeta.Name == query {
+			return modifyConfig(query)
+		}
+	}
+
 	fzfopt := []string{"--select-1", "--query", query}
 
 	result, err := fzfutil.FZF(func(in io.WriteCloser) {
