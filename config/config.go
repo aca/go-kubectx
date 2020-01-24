@@ -20,7 +20,7 @@ func getCfgPath() (string, error) {
 	}
 
 	cfgPath = filepath.Join(cfgPath, "kubectx")
-	err = os.MkdirAll(cfgPath, 0600)
+	err = os.MkdirAll(cfgPath, 0777)
 	if err != nil {
 		return "", err
 	}
@@ -39,7 +39,7 @@ func getCfgPath() (string, error) {
 		if err != nil {
 			return "", err
 		}
-		err = ioutil.WriteFile(cfgPath, buf.Bytes(), 0600)
+		err = ioutil.WriteFile(cfgPath, buf.Bytes(), 0777)
 		if err != nil {
 			return "", err
 		}
