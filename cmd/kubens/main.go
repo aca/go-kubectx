@@ -75,7 +75,7 @@ func main() {
 
 	err = kubens(query)
 	if err != nil {
-		log.Printf("Err: %s", err)
+		fmt.Printf("Err: %s", err)
 		os.Exit(1)
 	}
 }
