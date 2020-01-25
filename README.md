@@ -9,15 +9,12 @@ Requires [fzf](https://github.com/junegunn/fzf) same as original kubectx.
 Using go mod, requires go>=1.13
 ```
 git clone git@github.com:aca/go-kubectx.git
-
-# Using go mod, requires Go>=1.13
 (cd go-kubectx/cmd/kubens && go install)
 (cd go-kubectx/cmd/kubectx && go install)
 
 # Using Docker - also cross-compiles for other OS's
+# Binaries will be built into the output directory after build.
 cd go-kubectx && ./build.sh
-
-files will be output into the output directory after build.
 ```
 
 or download pre-built binaries from [Releases](https://github.com/aca/go-kubectx/releases).
