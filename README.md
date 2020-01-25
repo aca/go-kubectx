@@ -13,6 +13,9 @@ git clone git@github.com:aca/go-kubectx.git
 (cd go-kubectx/cmd/kubectx && go install)
 ```
 
+or download pre-built binaries from [Releases](https://github.com/aca/go-kubectx/releases).
+
+
 ### Benchmarks
 
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
