@@ -1,0 +1,20 @@
+before:
+  hooks:
+    - go mod tidy
+builds:
+- id: "kubens"
+  binary: kubens
+  main: ./cmd/kubens
+- id: "kubectx"
+  binary: kubectx
+  main: ./cmd/kubectx
+archives:
+- replacements:
+    darwin: Darwin
+    linux: Linux
+    386: i386
+    amd64: x86_64
+checksum:
+  name_template: 'checksums.txt'
+changelog:
+  sort: asc
