@@ -1,5 +1,10 @@
-# go-kubectx
+**Archived**
 
+[kubectx](https://github.com/ahmetb/kubectx) is now written in go. Check [#12](https://github.com/aca/go-kubectx/issues/12). This project is not maintained anymore.
+
+---
+
+# go-kubectx
 Simply 5x-10x faster alternative to famous [kubectx](https://github.com/ahmetb/kubectx). Uses client-go.
 
 ### Dependencies
